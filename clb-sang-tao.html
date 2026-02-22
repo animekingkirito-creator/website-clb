@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>CLB Sáng Tạo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand"><a href="index.html" style="color:inherit;text-decoration:none">THPT <span>Lê Quý Đôn</span></a></div>
+      <nav class="nav">
+        <a href="index.html">Trang chủ</a>
+        <a href="#about">Giới thiệu</a>
+        <a href="#events">Sự kiện</a>
+        <a href="#contact">Liên hệ</a>
+      </nav>
+      <button class="menu-btn" aria-label="Mở menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="club-icon" style="font-size:3rem;margin-bottom:0.5rem">🎨</div>
+        <h1>CLB Sáng Tạo</h1>
+        <p>Không gian cho ý tưởng, dự án và kết nối những người yêu công nghệ, thiết kế và sáng tạo.</p>
+        <div class="club-stats" style="justify-content:center;margin-top:1rem">
+          <span>120 thành viên</span>
+          <span>Công nghệ & Thiết kế</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="container about">
+      <h2>Giới thiệu</h2>
+      <p>CLB Sáng Tạo được thành lập để hỗ trợ học sinh THPT Lê Quý Đôn phát triển kỹ năng công nghệ và sáng tạo qua các dự án, workshop và buổi học nhóm. Chúng tôi chào đón mọi bạn yêu thích lập trình, thiết kế đến quản lý dự án.</p>
+      <div class="features">
+        <div class="card">
+          <h3>Workshop</h3>
+          <p>Chuỗi workshop hàng tháng về kỹ năng thực tế như UI/UX, lập trình, và quản lý dự án.</p>
+        </div>
+        <div class="card">
+          <h3>Dự án thực tế</h3>
+          <p>Tham gia dự án nhóm để xây sản phẩm có thể demo và thêm vào portfolio.</p>
+        </div>
+        <div class="card">
+          <h3>Mạng lưới</h3>
+          <p>Kết nối với chuyên gia, cựu thành viên và nhà tuyển dụng trong ngành.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="events" class="container events">
+      <h2>Sự kiện sắp tới</h2>
+      <ul>
+        <li><strong>Hackathon 48h</strong> — 12-14/03 — Đội nhóm tự do</li>
+        <li><strong>Workshop UI/UX</strong> — 21/03 — Giới hạn 30 ghế</li>
+        <li><strong>Demo Night</strong> — 05/04 — Trưng bày dự án</li>
+        <li><strong>Meetup tháng 4</strong> — 18/04 — Chia sẻ kinh nghiệm</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h2>Liên hệ & Tham gia</h2>
+      <p>Muốn tham gia hoặc hợp tác? Gửi email cho chúng tôi hoặc đến buổi gặp hàng tuần.</p>
+      <div class="contact-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem;margin-top:1rem">
+        <div class="contact-item">
+          <strong>📧 Email:</strong><br>
+          <a href="mailto:sangtao@lequydon-hanoi.edu.vn">sangtao@lequydon-hanoi.edu.vn</a>
+        </div>
+        <div class="contact-item">
+          <strong>💬 Nhóm Zalo:</strong><br>
+          <a href="#">CLB Sáng Tạo LQD</a>
+        </div>
+        <div class="contact-item">
+          <strong>📍 Họp mặt:</strong><br>
+          Thứ 6 hàng tuần, 15:30<br>
+          Phòng Tin học, Tầng 3
+        </div>
+        <div class="contact-item">
+          <strong>👥 Chủ nhiệm:</strong><br>
+          Lan Trinh (Lớp 11A1)<br>
+          <a href="mailto:lantrinh2k8@gmail.com">lantrinh2k8@gmail.com</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 CLB Sáng Tạo - THPT Lê Quý Đôn — <a href="index.html">Quay lại trang chủ</a></p>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.querySelector('.menu-btn');
+    const nav = document.querySelector('.nav');
+    btn.addEventListener('click', ()=> nav.classList.toggle('open'));
+  </script>
+</body>
+</html>

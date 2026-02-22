@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>CLB Nhiếp ảnh</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand"><a href="index.html" style="color:inherit;text-decoration:none">THPT <span>Lê Quý Đôn</span></a></div>
+      <nav class="nav">
+        <a href="index.html">Trang chủ</a>
+        <a href="#about">Giới thiệu</a>
+        <a href="#gallery">Bộ sưu tập</a>
+        <a href="#contact">Liên hệ</a>
+      </nav>
+      <button class="menu-btn" aria-label="Mở menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="club-icon" style="font-size:3rem;margin-bottom:0.5rem">📸</div>
+        <h1>CLB Nhiếp ảnh</h1>
+        <p>Cộng đồng đam mê nhiếp ảnh, chia sẻ kỹ thuật và tổ chức chuyến chụp hình cùng nhau.</p>
+        <div class="club-stats" style="justify-content:center;margin-top:1rem">
+          <span>85 thành viên</span>
+          <span>Nghệ thuật</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="container about">
+      <h2>Giới thiệu</h2>
+      <p>CLB Nhiếp ảnh là nơi quy tụ những người yêu thích ghi lại khoảnh khắc đẹp. Từ người mới bắt đầu đến nhiếp ảnh gia có kinh nghiệm, tất cả đều được chào đón để cùng học hỏi và sáng tạo.</p>
+      <div class="features">
+        <div class="card">
+          <h3>Chuyến chụp hình</h3>
+          <p>Tổ chức các chuyến đi chụp ảnh thiên nhiên, street photography và portrait.</p>
+        </div>
+        <div class="card">
+          <h3>Chia sẻ kỹ thuật</h3>
+          <p>Workshop về composition, lighting, post-processing với Lightroom/Photoshop.</p>
+        </div>
+        <div class="card">
+          <h3>Triển lãm ảnh</h3>
+          <p>Tổ chức triển lãm thường niên để thành viên trưng bày tác phẩm.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="container">
+      <h2>Hoạt động gần đây</h2>
+      <ul>
+        <li><strong>Chụp ảnh hoàng hôn</strong> — Đồi Đơn Dương — 15 người tham gia</li>
+        <li><strong>Workshop Portrait</strong> — Studio căn bản — 25 người học</li>
+        <li><strong>Street Photography</strong> — Phố cổ Hà Nội — 20 tác phẩm</li>
+        <li><strong>Photo Contest</strong> — "Màu sắc mùa xuân" — 80+ bài dự thi</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h2>Liên hệ & Tham gia</h2>
+      <p>Bạn yêu nhiếp ảnh và muốn cải thiện kỹ năng? Hãy gia nhập cộng đồng nhiếp ảnh của chúng tôi!</p>
+      <div class="contact-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem;margin-top:1rem">
+        <div class="contact-item">
+          <strong>📧 Email:</strong><br>
+          <a href="mailto:nhiepahn@lequydon-hanoi.edu.vn">nhiepahn@lequydon-hanoi.edu.vn</a>
+        </div>
+        <div class="contact-item">
+          <strong>📱 Instagram:</strong><br>
+          <a href="#">@lqd_photography</a>
+        </div>
+        <div class="contact-item">
+          <strong>📍 Họp mặt:</strong><br>
+          Chủ nhật hàng tuần, 14:00<br>
+          Sân trường, Tầng 1
+        </div>
+        <div class="contact-item">
+          <strong>👥 Trưởng nhóm:</strong><br>
+          Thu Trang (Lớp 12A2)<br>
+          <a href="mailto:thutrang2k7@gmail.com">thutrang2k7@gmail.com</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 CLB Nhiếp ảnh - THPT Lê Quý Đôn — <a href="index.html">Quay lại trang chủ</a></p>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.querySelector('.menu-btn');
+    const nav = document.querySelector('.nav');
+    btn.addEventListener('click', ()=> nav.classList.toggle('open'));
+  </script>
+</body>
+</html>
