@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>CLB Nhiếp ảnh</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Remove global page background image for this club page */
+    body { background-image: none !important; background-color: var(--bg); }
+  </style>
 </head>
 <body>
   <header class="site-header">
@@ -21,9 +25,8 @@
   </header>
 
   <main>
-    <section class="hero">
+    <section class="hero bg-club" style="background-image: url('images/nhiep-anh-card.jpg');">
       <div class="container hero-inner">
-        <div class="club-icon" style="font-size:3rem;margin-bottom:0.5rem">📸</div>
         <h1>CLB Nhiếp ảnh</h1>
         <p>Cộng đồng đam mê nhiếp ảnh, chia sẻ kỹ thuật và tổ chức chuyến chụp hình cùng nhau.</p>
         <div class="club-stats" style="justify-content:center;margin-top:1rem">
