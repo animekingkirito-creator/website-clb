@@ -1,0 +1,14 @@
+{
+  "name": "CLB THPT Lê Quý Đôn",
+  "short_name": "CLB LQD",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#0f1724",
+  "theme_color": "#4fd1c5",
+  "icons": [
+    { "src": "images/manifest-icon-192.svg", "sizes": "192x192", "type": "image/svg+xml" },
+    { "src": "images/manifest-icon-512.svg", "sizes": "512x512", "type": "image/svg+xml" },
+    { "src": "images/manifest-icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "images/manifest-icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

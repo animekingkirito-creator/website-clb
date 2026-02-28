@@ -1,0 +1,892 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Danh sách Câu lạc bộ</title>
+  <meta name="description" content="Danh sách các câu lạc bộ THPT Lê Quý Đôn - âm nhạc, nhiếp ảnh, thể thao, sáng tạo và nhiều hơn nữa. Tham gia để kết nối và phát triển kỹ năng.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://example.com/index.html">
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="CLB THPT Lê Quý Đôn">
+  <meta property="og:description" content="Danh sách các câu lạc bộ THPT Lê Quý Đôn - tham gia cộng đồng học sinh năng động.">
+  <meta property="og:image" content="images/461961575_2777248562440490_5937077049158763598_n.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Prefetch important internal pages for snappier navigation -->
+  <link rel="prefetch" href="clb-sang-tao.html" as="document">
+  <link rel="prefetch" href="clb-nhiep-anh.html" as="document">
+  <link rel="prefetch" href="clb-chay-bo.html" as="document">
+  <link rel="prefetch" href="clb-doc-sach.html" as="document">
+  <link rel="prefetch" href="clb-nau-an.html" as="document">
+  <link rel="prefetch" href="clb-am-nhac.html" as="document">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#4fd1c5">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "School",
+    "name": "THPT Lê Quý Đôn",
+    "url": "https://example.com",
+    "logo": "https://example.com/images/manifest-icon-192.svg",
+    "contactPoint": [{"@type":"ContactPoint","telephone":"","contactType":"student-club"}]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Bỏ qua tới nội dung</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand animated"> 
+        <div class="logo">LQ</div>
+        <div>THPT <span>Lê Quý Đôn</span></div>
+      </div>
+      <nav class="nav">
+        <a href="#clubs">Câu lạc bộ</a>
+        <a href="#about">Giới thiệu</a>
+        <a href="#contact">Liên hệ</a>
+      </nav>
+      <div class="header-actions">
+        <button class="theme-toggle" aria-label="Chuyển giao diện">🌙</button>
+        <button class="anim-toggle" aria-label="Bật/Tắt animation">⚡</button>
+        <button class="blobs-toggle" aria-label="Bật/Tắt blobs">Blobs</button>
+        <label class="particle-control" title="Điều chỉnh mật độ hạt">
+          <input class="particle-range" type="range" min="0" max="200" value="100" aria-label="Mật độ hạt">
+          <span class="particle-value">100%</span>
+        </label>
+        <span class="particle-presets" aria-hidden="false">
+          <button class="preset-btn" data-val="30" aria-label="Low">Low</button>
+          <button class="preset-btn" data-val="100" aria-label="Medium">Med</button>
+          <button class="preset-btn" data-val="180" aria-label="High">High</button>
+          <button class="preset-reset" aria-label="Reset intensity">Reset</button>
+        </span>
+        <button class="menu-btn" aria-label="Mở menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero">
+      <canvas id="hero-canvas" class="hero-canvas" aria-hidden="true"></canvas>
+      <div class="hero-blobs" aria-hidden="true">
+        <div class="blob blob--one">
+          <svg viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+            <defs><linearGradient id="g1" x1="0" x2="1"><stop offset="0" stop-color="#4fd1c5"/><stop offset="1" stop-color="#7c3aed"/></linearGradient></defs>
+            <path fill="url(#g1)" d="M393,314Q360,378,300,396Q240,414,180,389Q120,364,93,303Q66,242,100,179Q134,116,197,94Q260,72,321,96Q382,120,403,181Q424,242,393,314Z"/>
+          </svg>
+        </div>
+        <div class="blob blob--two">
+          <svg viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+            <defs><linearGradient id="g2" x1="0" x2="1"><stop offset="0" stop-color="#7c3aed"/><stop offset="1" stop-color="#4fd1c5"/></linearGradient></defs>
+            <path fill="url(#g2)" d="M446,320Q428,390,366,418Q304,446,236,427Q168,408,122,352Q76,296,86,234Q96,172,142,126Q188,80,248,69Q308,58,362,86Q416,114,444,170Q472,226,446,320Z"/>
+          </svg>
+        </div>
+        <div class="blob blob--three">
+          <svg viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+            <defs><linearGradient id="g3" x1="0" x2="1"><stop offset="0" stop-color="#2dd4bf"/><stop offset="1" stop-color="#60a5fa"/></linearGradient></defs>
+            <path fill="url(#g3)" d="M350,420Q312,480,246,492Q180,504,130,456Q80,408,74,336Q68,264,100,208Q132,152,196,128Q260,104,322,120Q384,136,408,196Q432,256,410,320Q388,384,350,420Z"/>
+          </svg>
+        </div>
+      </div>
+      <div class="container hero-inner">
+        <h1>Các Câu lạc bộ THPT Lê Quý Đôn</h1>
+        <p>Tham gia các câu lạc bộ phù hợp với sở thích và đam mê của bạn. Kết nối, học hỏi và phát triển cùng cộng đồng học sinh.</p>
+        <a class="btn" href="#clubs">Xem danh sách</a>
+      </div>
+    </section>
+
+    <section id="clubs" class="container clubs">
+      <h2>Các Câu lạc bộ</h2>
+      <div class="club-grid">
+        <div class="club-card bg-club lazy-bg" data-bg="images/sang-tao-card.jpg" tabindex="0">
+          <h3>CLB Sáng Tạo</h3>
+          <p>Không gian cho ý tưởng, dự án và kết nối những người yêu công nghệ, thiết kế.</p>
+          <div class="club-stats">
+            <span>120 thành viên</span>
+            <span>Công nghệ & Thiết kế</span>
+          </div>
+          <a href="clb-sang-tao.html" class="club-link">Tham gia →</a>
+          <button class="mag-btn" aria-label="Phóng to ảnh">🔍</button>
+        </div>
+        
+        <div class="club-card bg-club lazy-bg" data-bg="images/nhiep-anh-card.jpg" tabindex="0">
+          <h3>CLB Nhiếp ảnh</h3>
+          <p>Cộng đồng đam mê nhiếp ảnh, chia sẻ kỹ thuật và tổ chức chuyến chụp hình.</p>
+          <div class="club-stats">
+            <span>85 thành viên</span>
+            <span>Nghệ thuật</span>
+          </div>
+          <a href="clb-nhiep-anh.html" class="club-link">Tham gia →</a>
+          <button class="mag-btn" aria-label="Phóng to ảnh">🔍</button>
+        </div>
+        
+        <div class="club-card bg-club lazy-bg" data-bg="images/chay-bo-card.jpg" tabindex="0">
+          <h3>CLB Chạy bộ</h3>
+          <p>Rèn luyện sức khỏe qua hoạt động chạy bộ, tham gia marathon và thử thách thể thao.</p>
+          <div class="club-stats">
+            <span>200 thành viên</span>
+            <span>Thể thao</span>
+          </div>
+          <a href="clb-chay-bo.html" class="club-link">Tham gia →</a>
+          <button class="mag-btn" aria-label="Phóng to ảnh">🔍</button>
+        </div>
+        
+        <div class="club-card bg-club lazy-bg" data-bg="images/doc-sach-card.jpg" tabindex="0">
+          <h3>CLB Đọc sách</h3>
+          <p>Thảo luận sách, review và chia sẻ tri thức qua các buổi gặp mặt hàng tuần.</p>
+          <div class="club-stats">
+            <span>65 thành viên</span>
+            <span>Văn học & Tri thức</span>
+          </div>
+          <a href="clb-doc-sach.html" class="club-link">Tham gia →</a>
+          <button class="mag-btn" aria-label="Phóng to ảnh">🔍</button>
+        </div>
+        
+        <div class="club-card bg-club lazy-bg" data-bg="images/nau-an-card.jpg" tabindex="0">
+          <h3>CLB Nấu ăn</h3>
+          <p>Học nấu ăn, chia sẻ công thức và tổ chức các buổi họp mặt thưởng thức món ngon.</p>
+          <div class="club-stats">
+            <span>90 thành viên</span>
+            <span>Ẩm thực</span>
+          </div>
+          <a href="clb-nau-an.html" class="club-link">Tham gia →</a>
+          <button class="mag-btn" aria-label="Phóng to ảnh">🔍</button>
+        </div>
+        
+        <div class="club-card bg-club lazy-bg" data-bg="images/am-nhac-card.jpg" tabindex="0">
+          <h3>CLB Âm nhạc</h3>
+          <p>Dành cho những người yêu âm nhạc, từ chơi nhạc cụ đến sáng tác và biểu diễn.</p>
+          <div class="club-stats">
+            <span>75 thành viên</span>
+            <span>Âm nhạc</span>
+          </div>
+          <a href="clb-am-nhac.html" class="club-link">Tham gia →</a>
+          <button class="mag-btn" aria-label="Phóng to ảnh">🔍</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="container about">
+      <h2>Giới thiệu</h2>
+      <p>Hệ thống câu lạc bộ giúp học sinh THPT Lê Quý Đôn tìm được cộng đồng phù hợp, phát triển sở thích và kỹ năng qua các hoạt động thực tế. Mỗi câu lạc bộ có đặc trưng riêng nhưng đều hướng tới việc kết nối các bạn học sinh và tạo ra giá trị tích cực cho trường học.</p>
+      <h3>Đóng góp</h3>
+      <p>Nguyễn Đoàn Kim Khôi — Thiết kế giao diện & front-end</p>
+      <p>Trần Trung Kiên — JavaScript & trải nghiệm người dùng</p>
+      <p>Bùi Nguyễn Chính Quân — Nội dung & kiểm thử (QA)</p>
+      <p>Trần Vũ Thuận — Hạ tầng & tối ưu hóa hiệu năng</p>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h2>Liên hệ</h2>
+      <p>Muốn tham gia hoặc hợp tác? Gửi email cho chúng tôi hoặc đến buổi gặp hàng tuần.</p>
+      <p>Email: <a href="mailto:thptlequydon.edu.vn">thptlequydon.edu.vn</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 THPT Lê Quý Đôn — Tất cả quyền được bảo lưu.</p>
+      <div class="socials">
+        <a href="#" aria-label="Facebook" class="social-link">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M22 12.07C22 6.48 17.52 2 11.93 2S2 6.48 2 12.07C2 17.09 5.66 21.2 10.44 21.95v-6.99H7.9v-2.9h2.54V9.41c0-2.51 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.45h-1.25c-1.23 0-1.61.76-1.61 1.54v1.85h2.74l-.44 2.9h-2.3v6.99C18.34 21.2 22 17.09 22 12.07z" fill="currentColor"/></svg>
+        </a>
+        <a href="#" aria-label="Instagram" class="social-link">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="4" stroke="currentColor" stroke-width="1.2"/><path d="M16 11.99a4 4 0 11-8 0 4 4 0 018 0z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M17.5 6.5h.01" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal for club details -->
+  <div class="modal-overlay" id="club-modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal" role="document">
+        <button class="modal-close" aria-label="Đóng">✕</button>
+      <div class="modal-content">
+        <div class="modal-image" id="modal-image" aria-hidden="true"></div>
+        <div class="modal-text">
+          <h3 id="modal-title"></h3>
+          <p id="modal-desc"></p>
+          <p class="modal-stats" id="modal-stats"></p>
+          <a id="modal-link" class="btn" href="#">Tham gia</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact form modal -->
+  <div class="modal-overlay" id="contact-modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal" role="document">
+      <button class="modal-close" aria-label="Đóng">✕</button>
+      <div class="modal-content">
+        <div class="modal-text">
+          <h3>Liên hệ CLB</h3>
+          <form id="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+            <div style="display:flex;gap:.5rem;flex-wrap:wrap">
+              <input name="name" placeholder="Họ và tên" required style="flex:1;padding:.5rem;border-radius:6px;border:1px solid rgba(255,255,255,0.06)">
+              <input name="email" type="email" placeholder="Email" required style="flex:1;padding:.5rem;border-radius:6px;border:1px solid rgba(255,255,255,0.06)">
+            </div>
+            <textarea name="message" placeholder="Nội dung" required style="width:100%;margin-top:.6rem;padding:.6rem;border-radius:6px;border:1px solid rgba(255,255,255,0.06);min-height:120px"></textarea>
+            <div style="display:flex;gap:.5rem;margin-top:.6rem;align-items:center">
+              <button class="btn" type="submit">Gửi</button>
+              <button type="button" class="modal-close" style="background:transparent;border:0;color:var(--muted)">Hủy</button>
+            </div>
+            <div id="contact-feedback" style="margin-top:.6rem;color:var(--muted);display:none"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lb-close" aria-label="Đóng">✕</button>
+    <div class="lb-nav">
+      <button class="lb-btn" id="lb-prev" aria-label="Prev">◀</button>
+      <button class="lb-btn" id="lb-next" aria-label="Next">▶</button>
+    </div>
+    <img id="lb-img" src="" alt=""> 
+  </div>
+
+  <script>
+    // Menu đơn giản cho mobile
+    (function(){
+      const btn = document.querySelector('.menu-btn');
+      const nav = document.querySelector('.nav');
+      btn && btn.addEventListener('click', ()=> nav.classList.toggle('open'));
+
+      // Theme toggle (dark / light)
+      const themeBtn = document.querySelector('.theme-toggle');
+      const body = document.body;
+      const saved = localStorage.getItem('site-theme');
+      if(saved === 'light') body.classList.add('light');
+      if(saved === 'dark') body.classList.remove('light');
+      themeBtn && themeBtn.addEventListener('click', ()=>{
+        const isLight = body.classList.toggle('light');
+        localStorage.setItem('site-theme', isLight ? 'light' : 'dark');
+        themeBtn.textContent = isLight ? '🌤' : '🌙';
+      });
+
+      // Lazy-load background images for elements with data-bg
+      const lazyBgEls = document.querySelectorAll('.lazy-bg');
+      if('IntersectionObserver' in window){
+        const bgObserver = new IntersectionObserver((entries, obs)=>{
+          entries.forEach(e=>{
+            if(e.isIntersecting){
+              const el = e.target;
+              const src = el.dataset.bg;
+              if(src){
+                // try responsive variants: -lg.webp, -md.webp, -sm.webp, .webp, then original
+                const base = src.replace(/\.(jpg|png)$/i, '');
+                const variants = [`${base}-lg.webp`, `${base}-md.webp`, `${base}-sm.webp`, `${base}.webp`, src];
+                (async function(){
+                  let chosen = src;
+                  for(const v of variants){
+                    try{
+                      // only HEAD-check for non-data urls
+                      const res = await fetch(v, {method:'HEAD'});
+                      if(res && res.ok){ chosen = v; break; }
+                    }catch(e){ /* ignore */ }
+                  }
+                  el.style.backgroundImage = `url('${chosen}')`;
+                  el.classList.add('bg-loaded');
+                  obs.unobserve(el);
+                })();
+              }
+            }
+          });
+        },{rootMargin:'200px'});
+        lazyBgEls.forEach(el=> bgObserver.observe(el));
+      } else {
+        lazyBgEls.forEach(el=>{
+          const src = el.dataset.bg; if(src){el.style.backgroundImage = `url('${src}')`; el.classList.add('bg-loaded')}
+        });
+      }
+
+      // Try to replace body background with webp if available
+      (function(){
+        const bodyBg = getComputedStyle(document.body).backgroundImage || '';
+        const match = bodyBg.match(/url\(["']?(.+?)\)/);
+        if(match && match[1]){
+          const src = match[1];
+          const webp = src.replace(/\.jpg$|\.png$/i, '.webp');
+          fetch(webp, {method:'HEAD'}).then(res=>{
+            if(res && res.ok){
+              document.body.style.backgroundImage = `linear-gradient(rgba(2,6,23,0.55), rgba(2,6,23,0.55)), url('${webp}')`;
+            }
+          }).catch(()=>{});
+        }
+      })();
+
+      // Scroll reveal for subtle entrance
+      const revealEls = document.querySelectorAll('.reveal');
+      if('IntersectionObserver' in window){
+        const revObs = new IntersectionObserver((entries, obs)=>{
+          entries.forEach(e=>{
+            if(e.isIntersecting){
+              e.target.classList.add('is-visible');
+              obs.unobserve(e.target);
+            }
+          });
+        },{threshold:0.12});
+        revealEls.forEach(el=> revObs.observe(el));
+      } else {
+        revealEls.forEach(el=> el.classList.add('is-visible'));
+      }
+
+        // Hero particle background (lightweight) + parallax
+        let heroControl = null;
+        // particle multiplier (percent) default 100
+        let particleMultiplier = parseInt(localStorage.getItem('hero-intensity') || '100', 10);
+        (function(){
+        const canvas = document.getElementById('hero-canvas');
+        if(!canvas) return;
+        const ctx = canvas.getContext('2d');
+        let particles = [];
+        let raf = null;
+
+        function resize(){
+          const dpr = window.devicePixelRatio || 1;
+          canvas.width = canvas.clientWidth * dpr;
+          canvas.height = canvas.clientHeight * dpr;
+          ctx.setTransform(dpr,0,0,dpr,0,0);
+          initParticles();
+        }
+
+        function rand(min,max){ return Math.random()*(max-min)+min }
+
+        function initParticles(){
+          particles = [];
+          const area = canvas.clientWidth * canvas.clientHeight;
+          // stronger / denser default: smaller divisor to increase count
+          const base = Math.max(30, Math.round(area / 18000));
+          const scaled = Math.round(base * (particleMultiplier / 100));
+          const count = Math.min(420, Math.max(8, scaled));
+          const hues = [330, 340, 10, 20]; // warm/petal-ish hues
+          for(let i=0;i<count;i++){
+            const h = hues[i % hues.length] + Math.round(rand(-6,6));
+            particles.push({
+              x: rand(0, canvas.clientWidth),
+              y: rand(-canvas.clientHeight, canvas.clientHeight),
+              // petal size
+              r: rand(2.8, 6.5),
+              // gentle horizontal drift
+              vx: rand(-0.35,0.35),
+              // downward fall bias
+              vy: rand(0.2,0.9),
+              // higher alpha for bolder effect
+              alpha: rand(0.55,0.95),
+              hue: h,
+              ang: rand(0, Math.PI*2),
+              rotSpeed: rand(-0.02,0.02)
+            });
+          }
+        }
+
+        function draw(){
+          ctx.clearRect(0,0,canvas.clientWidth,canvas.clientHeight);
+          particles.forEach(p=>{
+            p.x += p.vx; p.y += p.vy;
+            if(p.x < -10) p.x = canvas.clientWidth + 10;
+            if(p.x > canvas.clientWidth + 10) p.x = -10;
+            if(p.y < -10) p.y = canvas.clientHeight + 10;
+            if(p.y > canvas.clientHeight + 10) p.y = -10;
+
+            // Draw a simple petal shape using rotated bezier path
+            ctx.save();
+            ctx.translate(p.x, p.y);
+            p.ang += p.rotSpeed;
+            ctx.rotate(p.ang);
+            const w = p.r * 3.6; // width
+            const hgt = p.r * 5.2; // height
+            // gradient for petal
+            const g = ctx.createLinearGradient(-w/2, -hgt/2, w/2, hgt/2);
+            g.addColorStop(0, `hsla(${p.hue},85%,65%,${p.alpha})`);
+            g.addColorStop(0.6, `hsla(${p.hue},75%,50%,${p.alpha*0.9})`);
+            g.addColorStop(1, `hsla(${p.hue},60%,45%,${p.alpha*0.75})`);
+            ctx.fillStyle = g;
+            ctx.beginPath();
+            ctx.moveTo(0, -hgt/2);
+            ctx.bezierCurveTo(w/2, -hgt/4, w/2, hgt/4, 0, hgt/2);
+            ctx.bezierCurveTo(-w/2, hgt/4, -w/2, -hgt/4, 0, -hgt/2);
+            ctx.closePath();
+            ctx.fill();
+            ctx.restore();
+          });
+        }
+
+        function loop(){ draw(); raf = requestAnimationFrame(loop); }
+
+        function start(){ if(!raf){ loop(); } }
+        function stop(){ if(raf){ cancelAnimationFrame(raf); raf = null } }
+
+        // Pause when not visible
+        document.addEventListener('visibilitychange', ()=>{
+          if(document.hidden) stop(); else start();
+        });
+
+        window.addEventListener('resize', ()=>{ resize(); });
+        // init
+        resize();
+        // export control
+        heroControl = { start, stop, setIntensity: (v)=>{ particleMultiplier = Math.max(0, Math.min(500, Number(v)||100)); localStorage.setItem('hero-intensity', String(particleMultiplier)); initParticles(); } };
+        // respect reduced motion preferences
+        const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        if(reduce){ /* do not auto-start animation */ }
+        else {
+          const animPref = localStorage.getItem('hero-animation');
+          if(animPref !== 'off'){ start(); }
+        }
+      })();
+
+      // Parallax: scroll (throttled via rAF) and hero mousemove
+      (function(){
+        const canvas = document.getElementById('hero-canvas');
+        const hero = document.querySelector('.hero');
+        const bgClubs = document.querySelectorAll('.bg-club');
+        if(!hero || !canvas) return;
+        let ticking = false;
+
+        function onScroll(){ if(!ticking){ window.requestAnimationFrame(updateParallax); ticking = true; } }
+
+        function updateParallax(){
+          const scrollY = window.scrollY || window.pageYOffset;
+          // move canvas slightly slower than scroll for depth
+          const offset = scrollY * 0.12;
+          canvas.style.transform = `translate3d(0, ${-offset}px, 0)`;
+
+          // cards background parallax: shift background-position based on element viewport pos
+          bgClubs.forEach(el=>{
+            const rect = el.getBoundingClientRect();
+            const center = rect.top + rect.height/2 - window.innerHeight/2;
+            const maxShift = 12; // px
+            const shift = (center / (window.innerHeight/2)) * maxShift;
+            el.style.backgroundPosition = `center ${50 + shift}%`;
+          });
+
+          ticking = false;
+        }
+
+        // subtle mouse parallax on hero
+        let mouseX = 0, mouseY = 0;
+        hero.addEventListener('mousemove', (e)=>{
+          const rect = hero.getBoundingClientRect();
+          mouseX = (e.clientX - rect.left) / rect.width - 0.5;
+          mouseY = (e.clientY - rect.top) / rect.height - 0.5;
+          canvas.style.transform = `translate3d(${mouseX * 12}px, ${-window.scrollY * 0.12 + mouseY * 8}px, 0)`;
+        });
+
+        window.addEventListener('scroll', onScroll, {passive:true});
+        onScroll();
+      })();
+
+      // Animation toggle button
+      (function(){
+        const animBtn = document.querySelector('.anim-toggle');
+        if(!animBtn) return;
+        const applyState = ()=>{
+          const off = localStorage.getItem('hero-animation') === 'off';
+          animBtn.textContent = off ? '⏸' : '⚡';
+          animBtn.title = off ? 'Animation tắt' : 'Animation bật';
+        };
+        // initial state
+        if(localStorage.getItem('hero-animation') === null){ localStorage.setItem('hero-animation','on'); }
+        applyState();
+        animBtn.addEventListener('click', ()=>{
+          const isOff = localStorage.getItem('hero-animation') === 'off';
+          if(isOff){ localStorage.setItem('hero-animation','on'); if(heroControl && heroControl.start) heroControl.start(); }
+          else { localStorage.setItem('hero-animation','off'); if(heroControl && heroControl.stop) heroControl.stop(); }
+          applyState();
+        });
+      })();
+
+      // Particle intensity slider handling
+      (function(){
+        const range = document.querySelector('.particle-range');
+        const label = document.querySelector('.particle-value');
+        if(!range) return;
+        const apply = (v)=>{
+          label.textContent = `${v}%`;
+          if(heroControl && heroControl.setIntensity) heroControl.setIntensity(v);
+        };
+        // init from stored value
+        const stored = parseInt(localStorage.getItem('hero-intensity') || '100',10);
+        range.value = stored; label.textContent = `${stored}%`;
+        range.addEventListener('input', ()=> apply(range.value));
+        range.addEventListener('change', ()=> apply(range.value));
+      })();
+
+      // Preset buttons handling
+      (function(){
+        const presets = document.querySelectorAll('.preset-btn');
+        const resetBtn = document.querySelector('.preset-reset');
+        const range = document.querySelector('.particle-range');
+        if(!range) return;
+        presets.forEach(btn=> btn.addEventListener('click', ()=>{
+          const v = btn.dataset.val || '100';
+          range.value = v; range.dispatchEvent(new Event('input'));
+        }));
+        resetBtn && resetBtn.addEventListener('click', ()=>{
+          range.value = 100; range.dispatchEvent(new Event('input'));
+        });
+      })();
+
+      // Blobs toggle
+      (function(){
+        const btn = document.querySelector('.blobs-toggle');
+        const enabled = localStorage.getItem('blobs-enabled') === 'true';
+        const apply = (on)=>{
+          document.body.classList.toggle('blobs-enabled', !!on);
+          if(btn) btn.textContent = on ? 'Blobs: On' : 'Blobs: Off';
+        };
+        apply(enabled);
+        btn && btn.addEventListener('click', ()=>{
+          const cur = document.body.classList.toggle('blobs-enabled');
+          localStorage.setItem('blobs-enabled', cur ? 'true' : 'false');
+          apply(cur);
+        });
+      })();
+
+      // Card tilt + modal interactions
+      (function(){
+        const cards = document.querySelectorAll('.club-card');
+        const modalOverlay = document.getElementById('club-modal');
+        const modalTitle = document.getElementById('modal-title');
+        const modalDesc = document.getElementById('modal-desc');
+        const modalImage = document.getElementById('modal-image');
+        const modalStats = document.getElementById('modal-stats');
+        const modalLink = document.getElementById('modal-link');
+        const modalClose = modalOverlay && modalOverlay.querySelector('.modal-close');
+
+        let lastFocused = null;
+        function getFocusable(el){
+          return Array.from(el.querySelectorAll('a[href], button, textarea, input, select, [tabindex]:not([tabindex="-1"])')).filter(e=>!e.hasAttribute('disabled'));
+        }
+
+        function openModal(card){
+          lastFocused = document.activeElement;
+          const title = card.querySelector('h3')?.innerText || '';
+          const desc = card.querySelector('p')?.innerText || '';
+          const statsEls = card.querySelectorAll('.club-stats span');
+          const stats = Array.from(statsEls).map(s=>s.innerText).join(' · ');
+          const bg = card.dataset.bg || getComputedStyle(card).backgroundImage.replace(/url\(["']?|["']?\)/g,'');
+
+          modalTitle.textContent = title;
+          modalDesc.textContent = desc;
+          modalStats.textContent = stats;
+          modalImage.style.backgroundImage = `url('${bg}')`;
+          modalLink.href = card.querySelector('.club-link')?.getAttribute('href') || '#';
+
+          modalOverlay.classList.add('open');
+          modalOverlay.setAttribute('aria-hidden','false');
+          modalOverlay.querySelector('.modal').setAttribute('tabindex','-1');
+
+          // focus management: focus first focusable inside modal
+          const focusables = getFocusable(modalOverlay);
+          if(focusables.length) focusables[0].focus();
+
+          // trap focus
+          modalOverlay.addEventListener('keydown', trapTab);
+        }
+
+        function closeModal(){
+          modalOverlay.classList.remove('open');
+          modalOverlay.setAttribute('aria-hidden','true');
+          modalOverlay.removeEventListener('keydown', trapTab);
+          if(lastFocused && typeof lastFocused.focus === 'function') lastFocused.focus();
+        }
+
+        function trapTab(e){
+          if(e.key !== 'Tab') return;
+          const focusables = getFocusable(modalOverlay);
+          if(focusables.length === 0) { e.preventDefault(); return }
+          const first = focusables[0]; const last = focusables[focusables.length-1];
+          if(e.shiftKey){ if(document.activeElement === first){ e.preventDefault(); last.focus(); } }
+          else { if(document.activeElement === last){ e.preventDefault(); first.focus(); } }
+        }
+
+        cards.forEach(card=>{
+          // tilt behavior
+          const rectRef = {w:0,h:0,left:0,top:0};
+          card.addEventListener('mousemove', (e)=>{
+            const rect = card.getBoundingClientRect(); rectRef.w = rect.width; rectRef.h = rect.height; rectRef.left = rect.left; rectRef.top = rect.top;
+            const x = (e.clientX - rect.left) / rect.width - 0.5;
+            const y = (e.clientY - rect.top) / rect.height - 0.5;
+            const rotX = (-y) * 8; const rotY = x * 8;
+            card.style.transform = `perspective(800px) rotateX(${rotX}deg) rotateY(${rotY}deg) translateZ(6px)`;
+            card.classList.add('is-tilting');
+          });
+          card.addEventListener('mouseleave', ()=>{
+            card.style.transform = '';
+            card.classList.remove('is-tilting');
+          });
+
+          // click or Enter to open modal
+          card.addEventListener('click', (e)=>{
+            // avoid clicks on links inside
+            if(e.target.closest('a')) return;
+            openModal(card);
+          });
+          card.addEventListener('keydown', (e)=>{
+            if(e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openModal(card); }
+          });
+        });
+
+        // modal controls
+        modalClose && modalClose.addEventListener('click', closeModal);
+        modalOverlay && modalOverlay.addEventListener('click', (e)=>{ if(e.target === modalOverlay) closeModal(); });
+        document.addEventListener('keydown', (e)=>{ if(e.key === 'Escape') closeModal(); });
+      })();
+
+      // Contact modal & form handling
+      (function(){
+        const contactModal = document.getElementById('contact-modal');
+        if(!contactModal) return;
+        const modalCloses = contactModal.querySelectorAll('.modal-close');
+        const form = document.getElementById('contact-form');
+        const feedback = document.getElementById('contact-feedback');
+
+        function open(){ contactModal.classList.add('open'); contactModal.setAttribute('aria-hidden','false'); const f = contactModal.querySelector('input,textarea,button'); if(f) f.focus(); }
+        function close(){ contactModal.classList.remove('open'); contactModal.setAttribute('aria-hidden','true'); }
+
+        // Delegated handler: catches current and future elements (e.g., dynamic CTA)
+        document.addEventListener('click', (e)=>{
+          const el = e.target.closest('a[href="#contact"], .open-contact');
+          if(!el) return;
+          e.preventDefault();
+          e.stopPropagation();
+          open();
+        });
+
+        modalCloses.forEach(b=> b.addEventListener('click', ()=> close()));
+        contactModal.addEventListener('click', (e)=>{ if(e.target === contactModal) close(); });
+
+        // form validation + submit via fetch to Formspree endpoint (placeholder)
+        form.addEventListener('submit', async (e)=>{
+          e.preventDefault();
+          feedback.style.display = 'none';
+          const data = new FormData(form);
+          const action = form.getAttribute('action');
+          // If Formspree placeholder not replaced, fallback to mailto
+          const isPlaceholder = action && action.includes('your-form-id');
+          if(isPlaceholder){
+            // build mailto
+            const obj = {};
+            data.forEach((v,k)=> obj[k]=v);
+            const subject = encodeURIComponent('Liên hệ CLB: ' + (obj.name||''));
+            const body = encodeURIComponent(`Tên: ${obj.name || ''}\nEmail: ${obj.email || ''}\n\n${obj.message || ''}`);
+            window.location.href = `mailto:thptlequydon.edu.vn?subject=${subject}&body=${body}`;
+            feedback.style.display = 'block'; feedback.textContent = 'Mở email client để gửi (fallback).';
+            form.reset();
+            return;
+          }
+
+          try{
+            const res = await fetch(action, { method: form.method || 'POST', body: data, headers: { 'Accept': 'application/json' } });
+            if(res.ok){
+              feedback.style.display = 'block'; feedback.textContent = 'Gửi thành công — chúng tôi sẽ phản hồi sớm.';
+              form.reset();
+            } else {
+              feedback.style.display = 'block'; feedback.textContent = 'Gửi thất bại, thử email: clb@lequydon-hanoi.edu.vn';
+            }
+          }catch(err){
+            feedback.style.display = 'block'; feedback.textContent = 'Không thể gửi (kiểm tra kết nối). Thử email: clb@lequydon-hanoi.edu.vn';
+          }
+        });
+      })();
+
+      // Lightbox implementation + page transitions
+      (function(){
+        // Page enter animation
+        document.documentElement.classList.add('page-enter');
+        window.addEventListener('DOMContentLoaded', ()=>{
+          setTimeout(()=> document.documentElement.classList.remove('page-enter'), 20);
+          document.documentElement.classList.add('page-ready');
+        });
+
+        // intercept internal link clicks for smooth fade (skip fragment anchors)
+        document.addEventListener('click', (e)=>{
+          const a = e.target.closest('a');
+          if(!a) return;
+          const href = a.getAttribute('href');
+          if(!href || href.startsWith('http') || href.startsWith('mailto:') || a.target === '_blank') return;
+          // avoid intercepting fragment anchors handled in-page
+          if(href.startsWith('#')) return;
+          e.preventDefault();
+          document.documentElement.classList.add('page-leaving');
+          setTimeout(()=> { window.location = href; }, 260);
+        });
+
+        const lb = document.getElementById('lightbox');
+        const lbImg = document.getElementById('lb-img');
+        const lbClose = document.querySelector('.lb-close');
+        const lbPrev = document.getElementById('lb-prev');
+        const lbNext = document.getElementById('lb-next');
+
+        const cards = Array.from(document.querySelectorAll('.club-card'));
+        const imgs = cards.map(c => c.dataset.bg || '');
+        let idx = 0;
+
+        function openLB(i){
+          idx = i;
+          const src = imgs[idx] || '';
+          lbImg.src = src;
+          lb.classList.add('open');
+          lb.setAttribute('aria-hidden','false');
+        }
+        function closeLB(){ lb.classList.remove('open'); lb.setAttribute('aria-hidden','true'); lbImg.src=''; }
+        function next(){ idx = (idx+1)%imgs.length; openLB(idx); }
+        function prev(){ idx = (idx-1+imgs.length)%imgs.length; openLB(idx); }
+
+        // attach magnify buttons
+        document.querySelectorAll('.club-card .mag-btn').forEach((btn, i)=>{
+          btn.addEventListener('click', (e)=>{ e.stopPropagation(); openLB(i); });
+        });
+
+        lbClose && lbClose.addEventListener('click', closeLB);
+        lbPrev && lbPrev.addEventListener('click', prev);
+        lbNext && lbNext.addEventListener('click', next);
+        lb && lb.addEventListener('click', (e)=>{ if(e.target === lb) closeLB(); });
+        document.addEventListener('keydown', (e)=>{ if(e.key === 'Escape') closeLB(); if(e.key==='ArrowRight') next(); if(e.key==='ArrowLeft') prev(); });
+      })();
+    })();
+
+    // Scroll-reveal and 3D tilt for club cards + floating CTA injection
+    (function(){
+      // add reveal class to common targets (non-destructive)
+      const targets = document.querySelectorAll('.hero, .hero .hero-inner, .club-card, .cards, .club-section, .features');
+      targets.forEach(el => el.classList.add('reveal'));
+
+      // IntersectionObserver to reveal elements
+      const reveals = document.querySelectorAll('.reveal');
+      if(reveals.length){
+        const io = new IntersectionObserver((entries)=>{
+          entries.forEach(en=>{
+            if(en.isIntersecting){ en.target.classList.add('visible'); io.unobserve(en.target); }
+          });
+        }, {threshold:0.10});
+        reveals.forEach(r=>io.observe(r));
+      }
+
+      // 3D tilt on pointermove for cards
+      const cards = document.querySelectorAll('.club-card');
+      cards.forEach(card=>{
+        function onMove(e){
+          const r = card.getBoundingClientRect();
+          const px = ((e.clientX - r.left) / r.width) - 0.5;
+          const py = ((e.clientY - r.top) / r.height) - 0.5;
+          const rotX = (-py) * 8; // tilt strength
+          const rotY = px * 12;
+          card.style.transform = `rotateX(${rotX}deg) rotateY(${rotY}deg) translateZ(6px)`;
+          card.classList.add('tilt');
+        }
+        function onLeave(){ card.style.transform = ''; card.classList.remove('tilt'); }
+        card.addEventListener('pointermove', onMove);
+        card.addEventListener('pointerleave', onLeave);
+      });
+
+      // Add a floating CTA if not present
+      if(!document.querySelector('.floating-cta')){
+        const a = document.createElement('a');
+        a.className = 'floating-cta reveal';
+        a.href = '#contact';
+        a.textContent = 'Tham gia CLB';
+        document.body.appendChild(a);
+        // observe new CTA for reveal
+        if(window.IntersectionObserver){
+          const cta = document.querySelector('.floating-cta');
+          if(cta) setTimeout(()=>{ cta.classList.add('visible'); }, 260);
+        }
+      }
+    })();
+
+    // Parallax: subtle depth on mousemove + scroll for hero layers and club cards
+    (function(){
+      const hero = document.querySelector('.hero');
+      if(!hero) return;
+      const canvas = document.getElementById('hero-canvas');
+      const blobs = document.querySelector('.hero-blobs');
+      const heroInner = hero.querySelector('.hero-inner') || hero;
+      const bgClubs = Array.from(document.querySelectorAll('.bg-club'));
+
+      let tx = 0, ty = 0;           // current
+      let txTarget = 0, tyTarget = 0; // target
+      let rafScheduled = false;
+
+      function onMove(e){
+        const rect = hero.getBoundingClientRect();
+        const px = ((e.clientX - rect.left) / rect.width) - 0.5; // -0.5..0.5
+        const py = ((e.clientY - rect.top) / rect.height) - 0.5;
+        txTarget = px * 16; // horizontal strength
+        tyTarget = py * 12; // vertical strength
+        schedule();
+      }
+
+      function onLeave(){ txTarget = 0; tyTarget = 0; schedule(); }
+
+      function schedule(){ if(!rafScheduled){ rafScheduled = true; requestAnimationFrame(tick); } }
+
+      function tick(){
+        tx += (txTarget - tx) * 0.09;
+        ty += (tyTarget - ty) * 0.09;
+
+        // parallax layers: different multipliers create depth
+        const heroInnerX = tx * 0.30;
+        const heroInnerY = ty * 0.40 - window.scrollY * 0.04;
+        const canvasX = tx * 0.55;
+        const canvasY = ty * 0.70 - window.scrollY * 0.09;
+        const blobsX = tx * 0.38;
+        const blobsY = ty * 0.32 - window.scrollY * 0.03;
+
+        heroInner.style.transform = `translate3d(${heroInnerX}px, ${heroInnerY}px, 0)`;
+        if(canvas) canvas.style.transform = `translate3d(${canvasX}px, ${canvasY}px, 0)`;
+        if(blobs) blobs.style.transform = `translate3d(${blobsX}px, ${blobsY}px, 0)`;
+
+        // gentle parallax for club card backgrounds
+        bgClubs.forEach((el, i) => {
+          const rect = el.getBoundingClientRect();
+          const cx = (rect.left + rect.width/2) - (window.innerWidth/2);
+          const rel = cx / (window.innerWidth/2); // -1..1
+          const depth = 6 + (i % 3); // slight per-card variation
+          const posShift = rel * depth; // percent-ish shift
+          el.style.backgroundPosition = `center ${50 + posShift}%`;
+          el.style.transform = `translate3d(${tx*0.02}px, ${ty*0.02}px, 0)`;
+        });
+
+        rafScheduled = false;
+      }
+
+      hero.addEventListener('mousemove', onMove, {passive:true});
+      hero.addEventListener('mouseleave', onLeave);
+      window.addEventListener('scroll', schedule, {passive:true});
+
+      // initial tick to ensure clean state
+      schedule();
+    })();
+
+    // Register service worker for PWA
+    (function(){
+      if('serviceWorker' in navigator){
+        // register only on secure origins or localhost
+        window.addEventListener('load', ()=>{
+          navigator.serviceWorker.register('/sw.js').then(reg=>{
+            console.log('SW registered', reg.scope);
+          }).catch(err=>{ console.warn('SW registration failed', err); });
+        });
+      }
+    })();
+
+    // Header scrolled class (adds stronger background when page scrolls)
+    (function(){
+      const header = document.querySelector('.site-header');
+      if(!header) return;
+      const onScroll = ()=> header.classList.toggle('scrolled', window.scrollY > 12);
+      window.addEventListener('scroll', onScroll, {passive:true});
+      onScroll();
+    })();
+  </script>
+</body>
+</html>

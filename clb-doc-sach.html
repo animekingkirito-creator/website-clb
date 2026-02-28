@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>CLB Đọc sách</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand"><a href="index.html" style="color:inherit;text-decoration:none">THPT <span>Lê Quý Đôn</span></a></div>
+      <nav class="nav">
+        <a href="index.html">Trang chủ</a>
+        <a href="#about">Giới thiệu</a>
+        <a href="#books">Đang đọc</a>
+        <a href="#contact">Liên hệ</a>
+      </nav>
+      <button class="menu-btn" aria-label="Mở menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero bg-club" style="background-image: url('images/doc-sach-card.jpg');">
+      <div class="container hero-inner">
+        <h1>CLB Đọc sách</h1>
+        <p>Thảo luận sách, review và chia sẻ tri thức qua các buổi gặp mặt hàng tuần.</p>
+        <div class="club-stats" style="justify-content:center;margin-top:1rem">
+          <span>65 thành viên</span>
+          <span>Văn học & Tri thức</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="container about">
+      <h2>Giới thiệu</h2>
+      <p>CLB Đọc sách dành cho những người yêu thích văn chương và muốn mở rộng tầm nhìn qua việc đọc sách. Chúng tôi thảo luận mọi thể loại từ tiểu thuyết, sách kiến thức đến tự truyện và sách chuyên ngành.</p>
+      <div class="features">
+        <div class="card">
+          <h3>Book Club hàng tuần</h3>
+          <p>Mỗi tuần cùng đọc 1 quyển sách và thảo luận sâu sắc về nội dung.</p>
+        </div>
+        <div class="card">
+          <h3>Reading challenge</h3>
+          <p>Thử thách đọc 30-50 quyển sách mỗi năm với phần thưởng hấp dẫn.</p>
+        </div>
+        <div class="card">
+          <h3>Review & Rating</h3>
+          <p>Chia sẻ review sách, đánh giá và gợi ý sách hay cho nhau.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="books" class="container events">
+      <h2>Sách đang đọc tháng này</h2>
+      <ul>
+        <li><strong>"Nhà giả kim"</strong> — Paulo Coelho — Thảo luận 18/03</li>
+        <li><strong>"Sapiens"</strong> — Yuval Noah Harari — Đọc chậm, 25/03</li>
+        <li><strong>"Tôi thấy hoa vàng trên cỏ xanh"</strong> — Nguyễn Nhật Ánh — 01/04</li>
+        <li><strong>Review cuối tháng</strong> — Tất cả sách đã đọc — 30/03</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h2>Liên hệ & Tham gia</h2>
+      <p>Bạn có niềm đam mê với sách vở? Hãy tham gia cộng đồng để cùng khám phá thế giới tri thức!</p>
+      <div class="contact-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem;margin-top:1rem">
+        <div class="contact-item">
+          <strong>📧 Email:</strong><br>
+          <a href="mailto:docsach@lequydon-hanoi.edu.vn">docsach@lequydon-hanoi.edu.vn</a>
+        </div>
+        <div class="contact-item">
+          <strong>📱 Nhóm Facebook:</strong><br>
+          <a href="#">CLB Đọc sách LQD</a>
+        </div>
+        <div class="contact-item">
+          <strong>📍 Họp mặt:</strong><br>
+          Thứ 6 hàng tuần, 15:30<br>
+          Thư viện trường, Tầng 2
+        </div>
+        <div class="contact-item">
+          <strong>👥 Quản lý:</strong><br>
+          Hạ My (Lớp 10A4)<br>
+          <a href="mailto:hamy2k9@gmail.com">hamy2k9@gmail.com</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 CLB Đọc sách - THPT Lê Quý Đôn — <a href="index.html">Quay lại trang chủ</a></p>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.querySelector('.menu-btn');
+    const nav = document.querySelector('.nav');
+    btn.addEventListener('click', ()=> nav.classList.toggle('open'));
+  </script>
+</body>
+</html>
