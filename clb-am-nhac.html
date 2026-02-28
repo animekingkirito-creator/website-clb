@@ -3,100 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>CLB Âm nhạc</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>CLB EchoLab</title>
+  <link rel="stylesheet" href="styles.modern.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="brand"><a href="index.html" style="color:inherit;text-decoration:none">THPT <span>Lê Quý Đôn</span></a></div>
-      <nav class="nav">
-        <a href="index.html">Trang chủ</a>
-        <a href="#about">Giới thiệu</a>
-        <a href="#events">Sự kiện</a>
-        <a href="#contact">Liên hệ</a>
-      </nav>
-      <button class="menu-btn" aria-label="Mở menu">☰</button>
-    </div>
-  </header>
-
-  <main>
-    <section class="hero bg-club" style="background-image: url('images/am-nhac-card.jpg');">
-      <div class="container hero-inner">
-        <h1>CLB Âm nhạc</h1>
-        <p>Dành cho những người yêu âm nhạc, từ chơi nhạc cụ đến sáng tác và biểu diễn cùng nhau.</p>
-        <div class="club-stats" style="justify-content:center;margin-top:1rem">
-          <span>75 thành viên</span>
-          <span>Âm nhạc</span>
-        </div>
-      </div>
-    </section>
-
-    <section id="about" class="container about">
-      <h2>Giới thiệu</h2>
-      <p>CLB Âm nhạc là môi trường sáng tạo cho các musician, songwriter và những ai đam mê âm nhạc. Chúng tôi hỗ trợ từ việc học nhạc cụ đến việc tổ chức các buổi biểu diễn âm nhạc.</p>
-      <div class="features">
-        <div class="card">
-          <h3>Jam Session</h3>
-          <p>Buổi chơi nhạc tự do hàng tuần, kết hợp các nhạc cụ và thử nghiệm âm thanh mới.</p>
-        </div>
-        <div class="card">
-          <h3>Sáng tác nhạc</h3>
-          <p>Hướng dần viết lời, sắp xếp và thu âm các ca khúc gốc.</p>
-        </div>
-        <div class="card">
-          <h3>Biểu diễn</h3>
-          <p>Tổ chức concert nhỏ và tham gia các sự kiện âm nhạc của trường.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="events" class="container events">
-      <h2>Sự kiện âm nhạc</h2>
-      <ul>
-        <li><strong>Open Mic Night</strong> — Mỗi thứ 6 — 19:00 — Studio Âm nhạc</li>
-        <li><strong>Workshop Guitar</strong> — 23/03 — Cơ bản đến trung cấp</li>
-        <li><strong>Acoustic Show</strong> — 30/03 — Thành viên biểu diễn</li>
-        <li><strong>Recording Session</strong> — Đặt lịch trước — Miễn phí cho thành viên</li>
-      </ul>
-    </section>
-
-    <section id="contact" class="container contact">
-      <h2>Liên hệ & Tham gia</h2>
-      <p>Bạn có niềm đam mê với âm nhạc? Hãy đến và cùng tạo nên những giai điệu tuyệt vời!</p>
-      <div class="contact-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem;margin-top:1rem">
-        <div class="contact-item">
-          <strong>📧 Email:</strong><br>
-          <a href="mailto:amnhac@lequydon-hanoi.edu.vn">amnhac@lequydon-hanoi.edu.vn</a>
-        </div>
-        <div class="contact-item">
-          <strong>🎤 YouTube:</strong><br>
-          <a href="#">LQD Music Club</a>
-        </div>
-        <div class="contact-item">
-          <strong>🎸 Phòng Âm nhạc:</strong><br>
-          Tầng 3, Khu A<br>
-          Mở cửa: 15:30-17:30 hàng ngày
-        </div>
-        <div class="contact-item">
-          <strong>👥 Thầy giáo phụ trách:</strong><br>
-          Thầy Tùng (GV Âm nhạc)<br>
-          <a href="mailto:tung.gv@lequydon-hanoi.edu.vn">tung.gv@lequydon-hanoi.edu.vn</a>
-        </div>
-      </div>
-    </section>
+  <main class="m-container">
+    <h1>CLB EchoLab</h1>
+    <p>EchoLab — phòng thu cộng đồng cho các bạn muốn thử nghiệm sản xuất âm thanh, thu âm và biểu diễn.</p>
+    <p>Hoạt động: jam session, workshop sản xuất âm thanh và dự án thu âm nhóm.</p>
+    <p><a href="index.html">Quay lại trang chính</a></p>
   </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p>© 2026 CLB Âm nhạc - THPT Lê Quý Đôn — <a href="index.html">Quay lại trang chủ</a></p>
-    </div>
-  </footer>
-
-  <script>
-    const btn = document.querySelector('.menu-btn');
-    const nav = document.querySelector('.nav');
-    btn.addEventListener('click', ()=> nav.classList.toggle('open'));
-  </script>
 </body>
 </html>

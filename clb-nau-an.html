@@ -3,100 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>CLB Nấu ăn</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>CLB FlavorLab</title>
+  <link rel="stylesheet" href="styles.modern.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="brand"><a href="index.html" style="color:inherit;text-decoration:none">THPT <span>Lê Quý Đôn</span></a></div>
-      <nav class="nav">
-        <a href="index.html">Trang chủ</a>
-        <a href="#about">Giới thiệu</a>
-        <a href="#menu">Thực đơn</a>
-        <a href="#contact">Liên hệ</a>
-      </nav>
-      <button class="menu-btn" aria-label="Mở menu">☰</button>
-    </div>
-  </header>
-
-  <main>
-    <section class="hero bg-club" style="background-image: url('images/nau-an-card.jpg');">
-      <div class="container hero-inner">
-        <h1>CLB Nấu ăn</h1>
-        <p>Học nấu ăn, chia sẻ công thức và tổ chức các buổi họp mặt thưởng thức món ngon.</p>
-        <div class="club-stats" style="justify-content:center;margin-top:1rem">
-          <span>90 thành viên</span>
-          <span>Ẩm thực</span>
-        </div>
-      </div>
-    </section>
-
-    <section id="about" class="container about">
-      <h2>Giới thiệu</h2>
-      <p>CLB Nấu ăn là nơi các food lover cùng nhau khám phá nghệ thuật ẩm thực. Từ các món ăn truyền thống Việt Nam đến ẩm thực quốc tế, chúng tôi cùng học hỏi và thử nghiệm.</p>
-      <div class="features">
-        <div class="card">
-          <h3>Workshop nấu ăn</h3>
-          <p>Các lớp học thực hành từ cơ bản đến nâng cao với đầu bếp chuyên nghiệp.</p>
-        </div>
-        <div class="card">
-          <h3>Potluck Party</h3>
-          <p>Buổi họp mặt hàng tháng, mỗi người mang theo món ăn tự làm để chia sẻ.</p>
-        </div>
-        <div class="card">
-          <h3>Recipe Exchange</h3>
-          <p>Chia sẻ công thức nấu ăn đặc biệt và bí kếp gia truyền trong gia đình.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="menu" class="container events">
-      <h2>Món ăn tháng này</h2>
-      <ul>
-        <li><strong>Phở bò truyền thống</strong> — Workshop 20/03 — Đầu bếp Minh</li>
-        <li><strong>Bánh mì Việt Nam</strong> — Thực hành 27/03 — Làm từ đầu</li>
-        <li><strong>Trà tráng miệng</strong> — Workshop 03/04 — Dessert chuyên nghiệp</li>
-        <li><strong>Potluck Party</strong> — 10/04 — Chủ đề: Ăn chay sáng tạo</li>
-      </ul>
-    </section>
-
-    <section id="contact" class="container contact">
-      <h2>Liên hệ & Tham gia</h2>
-      <p>Bạn yêu thích nấu nương và muốn nâng cao kỹ năng? Tham gia cùng chúng tôi!</p>
-      <div class="contact-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem;margin-top:1rem">
-        <div class="contact-item">
-          <strong>📧 Email:</strong><br>
-          <a href="mailto:nauan@lequydon-hanoi.edu.vn">nauan@lequydon-hanoi.edu.vn</a>
-        </div>
-        <div class="contact-item">
-          <strong>📱 Nhóm Zalo:</strong><br>
-          <a href="#">CLB Nấu ăn LQD</a>
-        </div>
-        <div class="contact-item">
-          <strong>🍳 Bếp chung:</strong><br>
-          Phòng sinh hoạt, Tầng 1<br>
-          Thực hành: Thứ 7 hàng tuần
-        </div>
-        <div class="contact-item">
-          <strong>👥 Cô giáo hướng dẫn:</strong><br>
-          Cô Linh (GV Công nghệ)<br>
-          <a href="mailto:linh.gv@lequydon-hanoi.edu.vn">linh.gv@lequydon-hanoi.edu.vn</a>
-        </div>
-      </div>
-    </section>
+  <main class="m-container">
+    <h1>CLB FlavorLab</h1>
+    <p>FlavorLab khám phá kỹ thuật nấu ăn, phối vị và tổ chức sự kiện ẩm thực nhỏ cho thành viên thử nghiệm.</p>
+    <p>Chúng tôi có workshop, potluck và buổi thử nghiệm công thức để trao đổi kinh nghiệm.</p>
+    <p><a href="index.html">Quay lại trang chính</a></p>
   </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p>© 2026 CLB Nấu ăn - THPT Lê Quý Đôn — <a href="index.html">Quay lại trang chủ</a></p>
-    </div>
-  </footer>
-
-  <script>
-    const btn = document.querySelector('.menu-btn');
-    const nav = document.querySelector('.nav');
-    btn.addEventListener('click', ()=> nav.classList.toggle('open'));
-  </script>
 </body>
 </html>
